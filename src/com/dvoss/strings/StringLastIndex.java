@@ -1,4 +1,4 @@
-package com.dvoss;
+package com.dvoss.strings;
 
 /**
  * Created by Dan on 10/17/16.
