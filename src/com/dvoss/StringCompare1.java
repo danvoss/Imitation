@@ -3,6 +3,9 @@ package com.dvoss;
 /**
  * Created by Dan on 10/17/16.
  */
+
+// www.tutorialspoint.com/javaexamples
+
 public class StringCompare1 {
     public static void main(String[] args) {
         String s1 = "HELLO WORLD";
