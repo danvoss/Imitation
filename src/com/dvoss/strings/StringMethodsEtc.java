@@ -60,7 +60,28 @@ public class StringMethodsEtc {
         // formatting
         double mathE = Math.E;
         System.out.format("%f%n", mathE);
-        System.out.format(Locale.GERMAN, "%-10.4f%n%n", mathE);
+        System.out.format(Locale.GERMAN, "%-10.4f%n", mathE);
+
+        // concatenation
+        long startPlus = System.currentTimeMillis();
+        for (int i = 0; i < 5000; i++) {
+            String result = "This is" + "testing the" + "difference" + "between" + "String" + "and" + "StringBuilder";
+        }
+        long endPlus = System.currentTimeMillis();
+        System.out.println("Time for string concatenation with \'+\' : " + (endPlus - startPlus) + "ms");
+        long startAppend = System.currentTimeMillis();
+        for (int i = 0; i < 5000; i++) {
+            StringBuilder result = new StringBuilder();
+            result.append("This is");
+            result.append("testing the");
+            result.append("difference");
+            result.append("between");
+            result.append("String");
+            result.append("and");
+            result.append("StringBuilder");
+        }
+        long endAppend = System.currentTimeMillis();
+        System.out.println("Time for string concatenation with StringBuilder: " + (endAppend - startAppend) + "ms");
 
     }
 }
