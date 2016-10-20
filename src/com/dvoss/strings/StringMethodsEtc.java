@@ -1,5 +1,7 @@
 package com.dvoss.strings;
 
+import java.util.Locale;
+
 /**
  * Created by Dan on 10/20/16.
  */
@@ -55,6 +57,10 @@ public class StringMethodsEtc {
         System.out.println(d);
         System.out.println(e);
 
+        // formatting
+        double mathE = Math.E;
+        System.out.format("%f%n", mathE);
+        System.out.format(Locale.GERMAN, "%-10.4f%n%n", mathE);
 
     }
 }
