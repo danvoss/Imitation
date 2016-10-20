@@ -50,7 +50,7 @@ public class StringMethodsEtc {
         boolean c = (s.intern().equals(sLow.intern()));
         boolean d = (s == sLow);
         boolean e = (s.equals(sLow));
-        System.out.println(b);
+        System.out.println(b); // note: returns true!
         System.out.println(c);
         System.out.println(d);
         System.out.println(e);
