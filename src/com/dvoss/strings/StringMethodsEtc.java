@@ -83,5 +83,11 @@ public class StringMethodsEtc {
         long endAppend = System.currentTimeMillis();
         System.out.println("Time for string concatenation with StringBuilder: " + (endAppend - startAppend) + "ms");
 
+        // get unicode
+        if (s.codePointBefore(1) == s.codePointAt(0)) {
+            System.out.println("True.");
+            System.out.println(s.codePointAt(0));
+        }
+
     }
 }
