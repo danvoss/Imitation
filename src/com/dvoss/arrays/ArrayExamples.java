@@ -1,6 +1,8 @@
 package com.dvoss.arrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * Created by Dan on 10/21/16.
@@ -26,12 +28,21 @@ public class ArrayExamples {
         int indexA1 = Arrays.binarySearch(array1, 2);
         System.out.println(indexA1);
 
-        // find size of multi-dimensional array
+        // find size of 2-dimensional array
         String[][] data = new String[5][10];
         System.out.println(data.length); // 5
-        for (int i = 0; i < data.length; i++) {
-            System.out.println(data[i].length); // always 10
-        }
+        System.out.println(data[data.length - 1].length); // 10
+
+        // reverse an array list
+        ArrayList arrayList1 = new ArrayList();
+        arrayList1.add("A");
+        arrayList1.add("B");
+        arrayList1.add("C");
+        arrayList1.add("D");
+        arrayList1.add("E");
+        System.out.println("Original: " + arrayList1);
+        Collections.reverse(arrayList1);
+        System.out.println("Reversed: " + arrayList1);
 
     }
 }
