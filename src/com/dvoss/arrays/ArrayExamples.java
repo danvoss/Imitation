@@ -59,5 +59,20 @@ public class ArrayExamples {
         c.addAll(Arrays.asList(b));
         System.out.println(c);
 
+        // fill on initialization
+        int array2[] = new int[6];
+        Arrays.fill(array2, 10);
+        System.out.println(Arrays.toString(array2));
+        Arrays.fill(array2, 3, 6, 20);
+        System.out.println(Arrays.toString(array2));
+
+        // extend array after initialization
+        String[] array3 = new String[] {"A", "B", "C"};
+        String[] array4 = new String[5];
+        array4[3] = "D";
+        array4[4] = "E";
+        System.arraycopy(array3, 0, array4, 0, array3.length);
+        System.out.println(Arrays.toString(array4));
+
     }
 }
