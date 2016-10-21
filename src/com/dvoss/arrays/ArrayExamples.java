@@ -3,6 +3,7 @@ package com.dvoss.arrays;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 /**
  * Created by Dan on 10/21/16.
@@ -50,6 +51,13 @@ public class ArrayExamples {
         int max = Collections.max(Arrays.asList(numbers1));
         System.out.println("Min: " + min);
         System.out.println("Max: " + max);
+
+        // merge two arrays
+        String a[] = {"A", "E", "I"};
+        String b[] = {"O", "U"};
+        List c = new ArrayList(Arrays.asList(a));
+        c.addAll(Arrays.asList(b));
+        System.out.println(c);
 
     }
 }
