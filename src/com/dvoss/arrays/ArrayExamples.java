@@ -44,5 +44,12 @@ public class ArrayExamples {
         Collections.reverse(arrayList1);
         System.out.println("Reversed: " + arrayList1);
 
+        // search min and max
+        Integer[] numbers1 = {8, 2, 7, 1, 4, 9, 5};
+        int min = Collections.min(Arrays.asList(numbers1));
+        int max = Collections.max(Arrays.asList(numbers1));
+        System.out.println("Min: " + min);
+        System.out.println("Max: " + max);
+
     }
 }
