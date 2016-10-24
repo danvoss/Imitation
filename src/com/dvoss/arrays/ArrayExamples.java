@@ -74,5 +74,20 @@ public class ArrayExamples {
         System.arraycopy(array3, 0, array4, 0, array3.length);
         System.out.println(Arrays.toString(array4));
 
+        // find common elements
+        ArrayList arrayList2 = new ArrayList();
+        ArrayList arrayList3 = new ArrayList();
+        arrayList2.add(0, "A");
+        arrayList2.add(1, "B");
+        arrayList2.add(2, "C");
+        arrayList3.add(0, "A");
+        arrayList3.add(1, "B");
+        arrayList3.add(2, "E");
+        arrayList2.retainAll(arrayList3);
+        System.out.println(arrayList2.toString());
+
+
+
+
     }
 }
