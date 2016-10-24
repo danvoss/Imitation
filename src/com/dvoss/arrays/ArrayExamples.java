@@ -83,10 +83,16 @@ public class ArrayExamples {
         arrayList3.add(0, "A");
         arrayList3.add(1, "B");
         arrayList3.add(2, "E");
-        arrayList2.retainAll(arrayList3);
+        arrayList2.retainAll(arrayList3);  // *
         System.out.println(arrayList2.toString());
+        System.out.println(arrayList2.contains("A"));
 
-
+        // check equality
+        int[] arr1 = {1, 2, 3};
+        int[] arr2 = {4, 5, 6};
+        int[] arr3 = {1, 2, 3};
+        System.out.println(Arrays.equals(arr1, arr2));
+        System.out.println(Arrays.equals(arr1, arr3));
 
 
     }
