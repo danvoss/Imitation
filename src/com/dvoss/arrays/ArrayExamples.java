@@ -94,6 +94,5 @@ public class ArrayExamples {
         System.out.println(Arrays.equals(arr1, arr2));
         System.out.println(Arrays.equals(arr1, arr3));
 
-
     }
 }
