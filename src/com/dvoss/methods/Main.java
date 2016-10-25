@@ -26,6 +26,15 @@ public class Main {
         }
     }
 
+    public static int sumVarArgs(int... intArray) {
+        int sum, i;
+        sum = 0;
+        for (i = 0; i < intArray.length; i++) {
+            sum += intArray[i];
+        }
+        return sum;
+    }
+
     public static void main(String[] args) {
         Object test1 = new ArrayList<>();
         Object test2 = new Vector<>();
@@ -36,7 +45,12 @@ public class Main {
 
         // enum
         for (Car c : Car.values()) {
-            System.out.println(c + " costs " + c.getPrice() + " thousand dollars.");
+            System.out.printf("%s costs %s thousand dollars.\n", c, c.getPrice());
         }
+
+        // varargs
+        int sum = 0;
+        sum = sumVarArgs(new int[] {1, 2, 3});
+        System.out.printf("Sum is %s\n", sum);
     }
 }
