@@ -1,5 +1,7 @@
 package com.dvoss.methods;
 
+import com.dvoss.arrays.Car;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Vector;
@@ -31,5 +33,10 @@ public class Main {
         displayObjectClass(test1);
         displayObjectClass(test2);
         displayObjectClass(test3);
+
+        // enum
+        for (Car c : Car.values()) {
+            System.out.println(c + " costs " + c.getPrice() + " thousand dollars.");
+        }
     }
 }
