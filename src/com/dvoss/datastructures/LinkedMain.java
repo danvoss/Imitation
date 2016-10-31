@@ -22,6 +22,9 @@ public class LinkedMain {
         l.addFirst("50");
         l.addLast("600");
         System.out.println(l);
+        l.addLast("100");
+        System.out.println("Index of 200 is " + l.indexOf("200"));
+        System.out.println("Last index of 100 is " + l.lastIndexOf("100"));
     }
 
 }
