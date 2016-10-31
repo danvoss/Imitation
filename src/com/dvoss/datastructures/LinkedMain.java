@@ -1,5 +1,7 @@
 package com.dvoss.datastructures;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.LinkedList;
 
 /**
@@ -32,6 +34,12 @@ public class LinkedMain {
         System.out.println(l.pop());
         System.out.println(l);
         l.subList(4, 6).clear();
+        System.out.println(l);
+        Collection c = new ArrayList<>();
+        c.add("9");
+        c.add("99");
+        c.add("999");
+        l.addAll(c);
         System.out.println(l);
     }
 
