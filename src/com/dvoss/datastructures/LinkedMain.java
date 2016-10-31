@@ -17,8 +17,11 @@ public class LinkedMain {
         l.add("300");
         l.add("400");
         l.add("500");
-        System.out.println("First is" + l.getFirst());
-        System.out.println("Last is" + l.getLast());
+        System.out.println("First is " + l.getFirst());
+        System.out.println("Last is " + l.getLast());
+        l.addFirst("50");
+        l.addLast("600");
+        System.out.println(l);
     }
 
 }
